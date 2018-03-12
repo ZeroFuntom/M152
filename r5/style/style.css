@@ -1,0 +1,101 @@
+html{
+  overflow: hidden;
+}
+
+body{
+  margin: 0;
+  font-family: arial;
+  background-color: black;
+}
+
+main{
+}
+
+h1{
+  color: red;
+  font-size: 100pt;
+  margin-top: 200px;
+}
+
+.clickables{
+  position: absolute;
+  cursor: pointer;
+}
+
+.keys{
+  position: absolute;
+}
+
+.back{
+  position: absolute;
+  font-size: 30pt;
+  top: 950px;
+  left: 50px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.keyfound{
+  position: absolute;
+  font-size: 20pt;
+  top: 450px;
+  left: 720px;
+  width: 480px;
+  height: 200px;
+
+}
+
+.finish{
+  position: absolute;
+  background-color: black;
+  width: 1920px;
+  height: 1080px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  text-align: center;
+  opacity: 0;
+}
+
+#to-r0_v1{
+  left: 450px;
+  top: 270px;
+  width: 100px;
+  height: 180px;
+}
+
+#to-r0_v2{
+  left: 1440px;
+  top: 350px;
+  width: 150px;
+  height: 180px;
+}
+
+#to-r0_v3{
+  left: 1200px;
+  top: 350px;
+  width: 150px;
+  height: 120px;
+}
+
+#to-r1{
+  left: 900px;
+  top: 150px;
+  width: 200px;
+  height: 300px;
+}
+
+#r0_key{
+  left: 950px;
+  top: 640px;
+  height: 20px;
+}
+
+#r0_face{
+  position: absolute;
+  height: 10px;
+  left: 950px;
+  top: 750px;
+  opacity: 0;
+}
