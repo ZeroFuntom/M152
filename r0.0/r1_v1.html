@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creepy Mansion</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        setTimeout(function () {
+            new Audio('audio/GHOST8B.mp3').play();
+            $('#r1_ghost').animate({
+              left: '1000px',
+              opacity: 1
+            }, 2000);
+
+            $('#r1_ghost').animate({
+              left: '450px',
+              opacity: 0
+            }, 2000);
+        }, 1000);
+
+
+        //$('#r1_ghost').fadeIn(2000);
+        //$('#r1_ghost').animate({left: '1000px'}, 2000);
+        //$('#r1_ghost').fadeOut(2000);
+
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../_style/style.css">
+  </head>
+  <body>
+    <main>
+      <img src="scenes/r1_v1.png">
+      <img id="r1_ghost" src="animations/ghost.jpg">
+      <a href="r1_main.html"><div class="back"></div></a>
+    </main>
+  </body>
+
+</html>
