@@ -8,7 +8,7 @@
       $(document).ready(function(){
         $('#to-r1').on('click', function(){
           new Audio('audio/door.mp3').play();
-          $('main').append('<div id="r1-fin" class="finish"><h1>Next Room</h1></div>');
+          $('main').append('<div id="r1-fin" class="finish"><h1 style="font-family: Castellar;">Next Room</h1></div>');
           $('#r1-fin').animate({
             opacity: '1'
           }, 1000);
@@ -20,7 +20,7 @@
   <body>
     <main>
       <img src="scenes/r0_main.png">
-      <div id="to-r1" class="clickables"></div>
+      <a href="r1_v1.html"><div id="to-r1" class="clickables"></div></a>
 
     </main>
   </body>

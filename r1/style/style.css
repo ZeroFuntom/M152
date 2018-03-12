@@ -8,9 +8,6 @@ body{
   background-color: black;
 }
 
-main{
-}
-
 h1{
   color: red;
   font-size: 100pt;
@@ -20,6 +17,8 @@ h1{
 .clickables{
   position: absolute;
   cursor: pointer;
+  border: solid;
+  border-color: yellow;
 }
 
 .keys{
@@ -34,6 +33,7 @@ h1{
   padding: 5px;
   background-color: black;
   color: white;
+  font-family: Castellar;
 }
 
 .keyfound{
@@ -59,23 +59,30 @@ h1{
 }
 
 #to-r0_v1{
-  left: 450px;
-  top: 270px;
-  width: 100px;
-  height: 180px;
+  left: 270px;
+  top: 200px;
+  width: 130px;
+  height: 300px;
 }
 
 #to-r0_v2{
-  left: 1440px;
-  top: 350px;
-  width: 150px;
-  height: 180px;
+  left: 1500px;
+  top: 600px;
+  width: 310px;
+  height: 130px;
 }
 
 #to-r0_v3{
-  left: 1200px;
-  top: 350px;
-  width: 150px;
+  left: 1300px;
+  top: 420px;
+  width: 100px;
+  height: 120px;
+}
+
+#to-r1_v4{
+  left: 1300px;
+  top: 420px;
+  width: 100px;
   height: 120px;
 }
 
