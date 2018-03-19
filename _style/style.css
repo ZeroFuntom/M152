@@ -11,32 +11,51 @@ body{
 main{
 }
 
+h1{
+  color: red;
+  font-size: 100pt;
+  margin-top: 200px;
+}
+
 .clickables{
-  border: solid;
+  position: absolute;
+  cursor: pointer;
+  border: solid
+}
+
+.keys{
   position: absolute;
 }
 
 .back{
-  border: solid;
   position: absolute;
-  bottom: 0;
+  font-size: 30pt;
+  top: 950px;
+  left: 50px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  font-family: Castellar;
+}
+
+.keyfound{
+  position: absolute;
+  font-size: 20pt;
+  top: 450px;
+  left: 720px;
+  width: 480px;
+  height: 200px;
+
+}
+
+.finish{
+  position: absolute;
+  background-color: black;
+  width: 1920px;
+  height: 1080px;
+  z-index: 1;
   left: 0;
-  width: 100px;
-  height: 50px;
-  font-family: Castellar;s
-}
-
-#to-r1_v1{
-
-  left: 500px;
-  top: 230px;
-  width: 300px;
-  height: 300px;
-}
-
-#r1_ghost{
-  position: absolute;
-  left: 450px;
   top: 0;
+  text-align: center;
   opacity: 0;
 }
