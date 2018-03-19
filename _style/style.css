@@ -59,3 +59,45 @@ h1{
   text-align: center;
   opacity: 0;
 }
+
+#to-r3_v1{
+  width: 600px;
+  height: 220px;
+  left: 490px;
+  top: 170px;
+}
+
+#to-r3_v2{
+  width: 300px;
+  height: 320px;
+  left: 1600px;
+  top: 250px;
+}
+
+#to-r3_v3{
+  width: 140px;
+  height: 220px;
+  left: 1250px;
+  top: 70px;
+}
+
+#to-r3_v4{
+  width: 140px;
+  height: 180px;
+  left: 0px;
+  top: 280px;
+}
+
+#to-r3_v4_v1{
+  width: 350px;
+  height: 180px;
+  left: 750px;
+  top: 370px;
+}
+
+#to-r3_v4_v2{
+  width: 350px;
+  height: 150px;
+  left: 650px;
+  top: 200px;
+}
