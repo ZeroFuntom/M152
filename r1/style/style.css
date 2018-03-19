@@ -58,6 +58,22 @@ h1{
   opacity: 0;
 }
 
+/*ROOM 0*/
+
+#r0_face{
+  position: absolute;
+  height: 10px;
+  left: 950px;
+  top: 750px;
+  opacity: 0;
+}
+
+#r0_key{
+  left: 950px;
+  top: 640px;
+  height: 20px;
+}
+
 #to-r0_v1{
   left: 270px;
   top: 200px;
@@ -79,6 +95,29 @@ h1{
   height: 120px;
 }
 
+/*ROOM 1*/
+
+#to-r1_v1{
+  left: 30px;
+  top: 580px;
+  width: 550px;
+  height: 350px;
+}
+
+#to-r1_v2{
+  left: 270px;
+  top: 200px;
+  width: 130px;
+  height: 300px;
+}
+  
+#to-r1_v3{
+  left: 1500px;
+  top: 600px;
+  width: 310px;
+  height: 130px;
+}
+
 #to-r1_v4{
   left: 1300px;
   top: 420px;
@@ -91,18 +130,4 @@ h1{
   top: 150px;
   width: 200px;
   height: 300px;
-}
-
-#r0_key{
-  left: 950px;
-  top: 640px;
-  height: 20px;
-}
-
-#r0_face{
-  position: absolute;
-  height: 10px;
-  left: 950px;
-  top: 750px;
-  opacity: 0;
 }
