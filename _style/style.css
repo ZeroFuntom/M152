@@ -75,9 +75,15 @@ h1{
 
 /*Creatures*/
 #maskman{
+  /*
   left: 1020px;
   top: 0px;
-  height: 380px;
+  */
+
+  left: 1670px;
+  top: 200px;
+
+  height: 700px;
   opacity: 1;
 }
 

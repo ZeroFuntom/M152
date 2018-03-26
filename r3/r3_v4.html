@@ -6,11 +6,64 @@
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $("#r3_v4_poweroff").animate({
-          opacity: 0
-        });
+        $("#r3_v4_poweroff").css("opacity", "0");
+        $("#maskman").css("opacity", "0");
+        setTimeout(function () {
+            $("#r3_v4_poweroff").animate({
+              opacity: 1
+            }, 100);
 
-        $("#r3_v4_poweroff").css("display", "none");
+            $("#maskman").animate({
+              opacity: 1,
+              left: 1670,
+              top: 200
+            }, 100);
+
+            $("#r3_v4_poweroff").animate({
+              opacity: 0
+            }, 100);
+
+            $("#r3_v4_poweroff").animate({
+              opacity: 1
+            }, 100);
+
+            $("#maskman").animate({
+              opacity: 0,
+              left: 1670,
+              top: 200
+            }, 100);
+
+            $("#maskman").animate({
+              opacity: 0,
+              left: 1020,
+              top: 0
+            }, 100);
+
+            $("#r3_v4_poweroff").animate({
+              opacity: 0
+            }, 100);
+
+            $("#r3_v4_poweroff").animate({
+              opacity: 1
+            }, 100);
+
+            $("#maskman").animate({
+              opacity: 1,
+              left: 1020,
+              top: 0,
+              height: 380
+            }, 10);
+
+            $("#r3_v4_poweroff").animate({
+              opacity: 0
+            }, 100);
+
+        }, 2000);
+
+        setTimeout(function () {
+            $("#r3_v4_poweroff").css("display", "none");
+        }, 5000);
+
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../_style/style.css">
