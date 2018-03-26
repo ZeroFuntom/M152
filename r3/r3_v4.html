@@ -6,18 +6,24 @@
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
+        $("#r3_v4_poweroff").animate({
+          opacity: 0
+        });
 
+        $("#r3_v4_poweroff").css("display", "none");
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../_style/style.css">
   </head>
   <body>
     <main>
+      <div id="r3_v4_poweroff" class="black"></div>
       <img src="scenes/r3_v4.png">
       <img id="maskman" class="creatures" src="animations/maskman.png">
       <a href="r3_v4_v1.html"><div id="to-r3_v4_v1" class="clickables"></div></a>
       <a href="r3_v4_v2.html"><div id="to-r3_v4_v2" class="clickables"></div></a>
       <a href="r3_main.html"><div class="back">back</div></a>
+
     </main>
   </body>
 

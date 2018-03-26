@@ -61,15 +61,27 @@ h1{
   left: 0;
   top: 0;
   text-align: center;
+  .opacity: 0;
+}
+
+.black{
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  z-index: 1;
+  background-color: black;
   opacity: 0;
 }
 
+/*Creatures*/
 #maskman{
-  left: 1000px;
+  left: 1020px;
   top: 0px;
-  height: 600px;
+  height: 380px;
+  opacity: 1;
 }
 
+/*Room Navigations*/
 #to-r3_v1{
   width: 600px;
   height: 220px;
