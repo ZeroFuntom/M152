@@ -6,7 +6,12 @@
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-
+         var s = new Audio('audio/creepypiano.mp3');
+         s.play();
+         $('#r3_v2_piano').on("click", function(){
+           new Audio('audio/pianohit.mp3').play();
+           s.pause();
+         });
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../_style/style.css">
@@ -14,6 +19,7 @@
   <body>
     <main>
       <img src="scenes/r3_v2.png">
+      <a><div id="r3_v2_piano" class="clickables"></div></a>
       <a href="r3_main.html"><div class="back">back</div></a>
     </main>
   </body>

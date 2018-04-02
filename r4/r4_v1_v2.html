@@ -6,7 +6,19 @@
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
+        setTimeout(function(){
+          new Audio('audio/moan.mp3').play();
 
+          $('#r4_hand').animate({
+            opacity: 1
+          },500);
+          $('#r4_message').animate({
+            opacity: 1
+          },500);
+          $('#r4_hand').animate({
+            opacity: 0
+          },500);
+        },2000);
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../_style/style.css">
@@ -14,6 +26,8 @@
   <body>
     <main>
       <img src="scenes/r4_v1_v2.png">
+      <div id="r4_message" class="creatures">the drain</div>
+      <img id="r4_hand" class="creatures" src="animations/hand.png">
       <a href="r4_v1.html"><div class="back">back</div></a>
     </main>
   </body>

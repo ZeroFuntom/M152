@@ -6,6 +6,72 @@
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
+        $('#r4_v1_v1_poweroff').css("display", "none");
+        $('#r4_drain').on("click", function(){
+
+          //alert("x");
+          var bg = new Audio('audio/creepybackground.mp3');
+          var demons = new Audio('audio/scarydemons.mp3');
+          $('#r4_v1_v1_poweroff').css("display", "block");
+          bg.play();
+          setTimeout(function(){
+            demons.play();
+          },500);
+
+          $('#r4_blood').animate({
+            opacity: 1
+          },1000);
+
+          setTimeout(function(){
+            new Audio('audio/powerfail.mp3').play();
+            $('#r4_v1_v1_poweroff').animate({
+              opacity: 1
+            },40);
+          },14500);
+
+          setTimeout(function(){
+            bg.pause();
+            demons.pause();
+          },15000);
+
+          setTimeout(function(){
+            new Audio('audio/moan.mp3').play();
+          },18000);
+
+          setTimeout(function(){
+            new Audio('audio/moan.mp3').play();
+          },21000);
+
+          setTimeout(function(){
+            new Audio('audio/loudscream.mp3').play();
+            $('main').append('<img src="animations/redface.png" id="r4_redface" class="creatures" style="top:0; left:610px; z-index:1;">');
+          },26000);
+
+          setTimeout(function(){
+            $('#r4_redface').css("display", "none");
+          },28000);
+
+          setTimeout(function(){
+            $('#r4_v1_v1_poweroff').css("display", "none");
+            $('#r4_blood').animate({
+              opacity: 0
+            },10);
+            $('#r4_drain').animate({
+              opacity: 0
+            },10);
+            $('#r4_key').css("display", "block");
+          },30000);
+
+        });
+
+        $('#r4_key').on('click', function(){
+          $('#r4_key').animate({
+            left: '720px',
+            top: '450px',
+            width: '400px'
+          }, 10);
+          $('main').append('<a href="r4_solved.html"><div class="keyfound"></div></a>');
+        });
 
       });
     </script>
@@ -13,8 +79,13 @@
   </head>
   <body>
     <main>
+      <div id="r4_v1_v1_poweroff" class="black"></div>
       <img src="scenes/r4_v1_v1.png">
+      <img id="r4_blood" class="creatures" src="animations/blood.png">
+      <div id="r4_drain" class="clickables"></div>
+      <img id="r4_key" class="keys" src="../_animations/key.png">
       <a href="r4_v1.html"><div class="back">back</div></a>
+      <!--<img  id="r4_redface" class="creatures" src="animations/redface.png">-->
     </main>
   </body>
 

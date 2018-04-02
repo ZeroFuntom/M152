@@ -6,7 +6,15 @@
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-
+        $('#r4_note').on("click", function(){
+          new Audio('audio/paperturn.mp3').play();
+          $(this).css("transform", "rotate(0deg)");
+          $(this).animate({
+            width: 300,
+            left: 800,
+            top: 200
+          }, 10);
+        });
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../_style/style.css">
@@ -14,6 +22,7 @@
   <body>
     <main>
       <img src="scenes/r4_v2.png">
+      <img id="r4_note" class="clickables" src="animations/notice.png">
       <a href="r4_main.html"><div class="back">back</div></a>
     </main>
   </body>

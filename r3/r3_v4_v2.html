@@ -6,15 +6,65 @@
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
+        setTimeout(function(){
+          new Audio('audio/bang.mp3').play();
+          new Audio('audio/scream.mp3').play();
+          $("#maskman_js").animate({
+            opacity: 1
+          }, 0);
 
+          $("#maskman_js").animate({
+            top: 400
+          }, 20);
+
+          $("#maskman_js").animate({
+            height: 1100,
+            top: 100,
+            left: 500
+          }, 20);
+        },2000);
+
+        setTimeout(function () {
+            $("#r3_v4_v2_poweroff").css("display", "none");
+            $("#r3_v4_v2_esc").animate({
+              opacity: 1
+            }, 20);
+        }, 3000);
+
+        $("#r3_v4_v2_esc").on("click", function(){
+          new Audio('audio/evil_laugh.mp3').play();
+          $("#r3_v4_v2_esc").animate({
+            opacity: 0
+          }, 20);
+          $("#maskman_js").animate({
+            top: 1080
+          }, 20);
+          $("#r3_key").animate({
+            opacity: 1
+          }, 20);
+        });
+
+        $('#r3_key').on('click', function(){
+
+          $('#r3_key').animate({
+            left: '720px',
+            top: '450px',
+            width: '400px'
+          }, 10);
+          $('main').append('<a href="r3_solved.html"><div class="keyfound"></div></a>');
+        });
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../_style/style.css">
   </head>
   <body>
     <main>
+      <div id="r3_v4_v2_poweroff" class="black"></div>
       <img src="scenes/r3_v4_v2.png">
+      <img id="maskman_js" class="creatures" src="animations/maskman_near.png">
+      <img id="r3_key" class="keys" src="../_animations/key.png">
       <a href="r3_v4.html"><div class="back">back</div></a>
+      <a><div id="r3_v4_v2_esc" class="escape">escape</div></a>
     </main>
   </body>
 

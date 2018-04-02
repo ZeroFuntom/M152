@@ -42,6 +42,19 @@ h1{
   font-family: Castellar;
 }
 
+.escape{
+  position: absolute;
+  font-size: 30pt;
+  top: 950px;
+  left: 900px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  font-family: Castellar;
+  cursor: pointer;
+  opacity: 0;
+}
+
 .keyfound{
   position: absolute;
   font-size: 20pt;
@@ -61,7 +74,7 @@ h1{
   left: 0;
   top: 0;
   text-align: center;
-  .opacity: 0;
+  opacity: 0;
 }
 
 .black{
@@ -73,19 +86,89 @@ h1{
   opacity: 0;
 }
 
+#r3_key{
+  opacity: 0;
+  left: 850px;
+  top: 500px;
+  width: 100px;
+}
+
+#r4_key{
+  display: none;
+  left: 1000px;
+  top: 640px;
+  width: 100px;
+}
+
 /*Creatures*/
 #maskman{
   /*
   left: 1020px;
   top: 0px;
   */
-
   left: 1670px;
   top: 200px;
 
   height: 700px;
-  opacity: 1;
+  opacity: 0;
 }
+
+#maskman_js{
+  /*
+  left: 1020px;
+  top: 0px;
+  */
+  left: 600px;
+  top: 1080px;
+
+  height: 700px;
+  opacity: 0;
+}
+
+#r3_v2_piano{
+  width: 900px;
+  height: 320px;
+  left: 200px;
+  top: 300px;
+}
+
+#r4_note{
+  left: 1300px;
+  top: 300px;
+  width: 100px;
+  transform: rotate(10deg);
+}
+
+#r4_hand{
+  opacity: 0;
+  top: 500px;
+  left: 600px;
+  width: 100px;
+
+}
+
+#r4_message{
+  opacity: 0;
+  top: 560px;
+  left: 600px;
+  color: red;
+  font-family: Bradley Hand ITC;
+}
+
+#r4_drain{
+  top: 640px;
+  left: 1050px;
+  width: 20px;
+  height: 20px;
+}
+
+#r4_blood{
+  left: 950px;
+  top: 550px;
+  width: 250px;
+  opacity: 0;
+}
+
 
 /*Room Navigations*/
 #to-r3_v1{
@@ -130,6 +213,13 @@ h1{
   top: 200px;
 }
 
+#to-r4{
+  width: 360px;
+  height: 300px;
+  left: 1550px;
+  top: 50px;
+}
+
 #to-r4_v1{
   width: 550px;
   height: 550px;
@@ -165,6 +255,13 @@ h1{
   top: 350px;
 }
 
+#to-r5{
+  width: 260px;
+  height: 320px;
+  left: 700px;
+  top: 200px;
+}
+
 
 #to-r5_v1{
   width: 150px;
@@ -181,15 +278,15 @@ h1{
 }
 
 #to-r5_v3{
-  width: 240px;
+  width: 140px;
   height: 300px;
   left: 1270px;
   top: 10px;
 }
 
 #to-r5_v4{
-  width: 440px;
-  height: 220px;
-  left: 0px;
-  top: 350px;
+  width: 450px;
+  height: 620px;
+  left: 1420px;
+  top: 50px;
 }

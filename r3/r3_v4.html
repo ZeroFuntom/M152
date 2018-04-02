@@ -6,9 +6,10 @@
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $("#r3_v4_poweroff").css("opacity", "0");
-        $("#maskman").css("opacity", "0");
+        //$("#r3_v4_poweroff").css("opacity", "0");
+        //$("#maskman").css("opacity", "0");
         setTimeout(function () {
+            new Audio('audio/scary.mp3').play();
             $("#r3_v4_poweroff").animate({
               opacity: 1
             }, 100);
@@ -61,8 +62,18 @@
         }, 2000);
 
         setTimeout(function () {
-            $("#r3_v4_poweroff").css("display", "none");
+            new Audio('audio/i_will_kill_you.mp3').play();
+        }, 3500);
+
+        setTimeout(function () {
+            $("#maskman").animate({
+              opacity: 0
+            }, 1000);
         }, 5000);
+
+        setTimeout(function () {
+            $("#r3_v4_poweroff").css("display", "none");
+        }, 7000);
 
       });
     </script>
@@ -76,6 +87,7 @@
       <a href="r3_v4_v1.html"><div id="to-r3_v4_v1" class="clickables"></div></a>
       <a href="r3_v4_v2.html"><div id="to-r3_v4_v2" class="clickables"></div></a>
       <a href="r3_main.html"><div class="back">back</div></a>
+
 
     </main>
   </body>
