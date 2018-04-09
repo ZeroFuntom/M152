@@ -253,6 +253,32 @@ h1{
   top: 270px;
 }
 
+#r2_key{
+  left: 950px;
+  top: 500px;
+  height: 20px;
+}
+
+#to-r2_v1{
+  left: 980px;
+  top: 280px;
+  width: 165px;
+  height: 200px;
+}
+
+#to-r2_v2{
+  left: 840px;
+  top: 80px;
+  width: 130px;
+  height: 200px;
+}
+
+#to-r3{
+  width: 120px;
+  height: 190px;
+  left: 850px;
+  top: 85px;
+}
 
 #to-r3_v1{
   width: 600px;
