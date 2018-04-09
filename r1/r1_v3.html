@@ -3,13 +3,20 @@
   <head>
     <title>Creepy Mansion</title>
     <meta charset="utf-8">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-
+        $('#r1_key').on('click', function(){
+          $('#r1_key').animate({
+            left: '720px',
+            top: '450px',
+            height: '200px'
+          }, 10);
+          $('main').append('<a href="r1_solved.html"><div class="keyfound"></div></a>');
+        });
       });
     </script>
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="../_style/style.css">
   </head>
   <body>
     <main>
