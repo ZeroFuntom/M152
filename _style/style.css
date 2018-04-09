@@ -86,6 +86,12 @@ h1{
   opacity: 0;
 }
 
+#blank{
+  background-color: white;
+  width: 1920px;
+  height: 1080px;
+}
+
 #r3_key{
   opacity: 0;
   left: 850px;
@@ -166,6 +172,27 @@ h1{
   left: 950px;
   top: 550px;
   width: 250px;
+  opacity: 0;
+}
+
+#r5_skull{
+  left: 1050px;
+  top: 230px;
+  width: 70px;
+  opacity: 0;
+  z-index: 1;
+}
+
+#r5_button{
+  left: 850px;
+  top: 250px;
+  width: 50px;
+}
+
+#r5a_alien{
+  left: 0;
+  top: 300px;
+  width: 80px;
   opacity: 0;
 }
 
@@ -289,4 +316,11 @@ h1{
   height: 620px;
   left: 1420px;
   top: 50px;
+}
+
+#r5-fin{
+  display: block;
+  background-color: white;
+  width: 1920px;
+  height: 1080px;
 }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creepy Mansion</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        new Audio('audio/strange.mp3').play();
+        setTimeout(function(){
+          $("#r5a_alien").animate({opacity: 1, left: 960}, 1000);
+          $("#r5a_alien").animate({opacity: 0, left: 1920}, 1000);
+        }, 2000);
+
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../_style/style.css">
+  </head>
+  <body>
+    <main id="blank">
+      <img id="r5a_alien" class="creatures" src="animations/alien.png">
+    </main>
+  </body>
+
+</html>
