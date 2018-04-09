@@ -101,6 +101,13 @@ h1{
 }
 
 /*Creatures*/
+#r1_silhouette{
+  left: 800px;
+  top: 250px;
+  width: 200px;
+  opacity: 0;
+}
+
 #maskman{
   /*
   left: 1020px;
@@ -171,6 +178,55 @@ h1{
 
 
 /*Room Navigations*/
+#to-r1_v1{
+  left: 30px;
+  top: 580px;
+  width: 550px;
+  height: 350px;
+}
+
+#to-r1_v2{
+  left: 270px;
+  top: 200px;
+  width: 130px;
+  height: 300px;
+}
+  
+#to-r1_v3{
+  left: 1500px;
+  top: 600px;
+  width: 310px;
+  height: 130px;
+}
+
+#to-r1_v4{
+  left: 1300px;
+  top: 420px;
+  width: 100px;
+  height: 120px;
+}
+
+#to-r1{
+  left: 900px;
+  top: 150px;
+  width: 200px;
+  height: 300px;
+}
+
+#r1_key{
+  left: 950px;
+  top: 640px;
+  height: 20px;
+}
+
+#to-r2{
+  width: 200px;
+  height: 250px;
+  left: 840px;
+  top: 270px;
+}
+
+
 #to-r3_v1{
   width: 600px;
   height: 220px;
