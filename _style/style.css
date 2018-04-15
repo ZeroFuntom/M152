@@ -29,6 +29,7 @@ h1{
 
 .keys{
   position: absolute;
+  cursor: pointer;
 }
 
 .back{
@@ -104,6 +105,39 @@ h1{
   left: 1000px;
   top: 640px;
   width: 100px;
+}
+
+#r5a_key{
+  opacity: 0;
+  left: 1920px;
+  top: 450px;
+  width: 50px;
+}
+
+#r6_key{
+  opacity: 1;
+  left: 600px;
+  top: 650px;
+  height: 20px;
+  transform: rotate(-20deg);
+}
+
+#r6_keyhider{
+  opacity: 0.9;
+  left: 600px;
+  top: 650px;
+  height: 20px;
+  width: 60px;
+  background-color: rgb(243,193,33);
+  transform: rotate(-20deg);
+}
+
+
+#r5a_door{
+  display: none;
+  opacity: 0;
+  left: 360px;
+  top: 200px;
 }
 
 /*Creatures*/
@@ -203,6 +237,15 @@ h1{
   opacity: 0;
 }
 
+#r6_girl{
+  left: 420px;
+  top: 200px;
+  width: 150px;
+  opacity: 1;
+  transform: rotate(-20deg);
+  cursor: pointer;
+}
+
 
 /*Room Navigations*/
 #to-r1_v1{
@@ -218,7 +261,7 @@ h1{
   width: 130px;
   height: 300px;
 }
-  
+
 #to-r1_v3{
   left: 1500px;
   top: 600px;
@@ -400,7 +443,77 @@ h1{
   top: 50px;
 }
 
-#r5-fin{
+#to-r6{
+  width: 200px;
+  height: 320px;
+  left: 320px;
+  top: 0px;
+}
+
+#to-r6_v1{
+  width: 650px;
+  height: 900px;
+  left: 1250px;
+  top: 150px;
+}
+
+#to-r6_v2{
+  width: 550px;
+  height: 150px;
+  left: 600px;
+  top: 600px;
+}
+
+#to-r6_v3{
+  width: 400px;
+  height: 170px;
+  left: 800px;
+  top: 400px;
+}
+
+#to-r6_v4{
+  width: 170px;
+  height: 160px;
+  left: 550px;
+  top: 430px;
+}
+
+#to-r6_v5{
+  width: 260px;
+  height: 120px;
+  left: 50px;
+  top: 580px;
+}
+
+#to-r7{
+  width: 200px;
+  height: 320px;
+  left: 290px;
+  top: 290px;
+}
+
+#to-r8_v1{
+  width: 650px;
+  height: 500px;
+  left: 1000px;
+  top: 100px;
+}
+
+#to-r8_v2{
+  width: 300px;
+  height: 450px;
+  left: 350px;
+  top: 60px;
+}
+
+#to-r8_v3{
+  width: 140px;
+  height: 300px;
+  left: 800px;
+  top: 0px;
+}
+
+#r5-time{
   display: block;
   background-color: white;
   width: 1920px;

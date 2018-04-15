@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creepy Mansion</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#r6_key').on('click', function(){
+          $("#r6_key").css("transform", "rotate(0deg)")
+          $('#r6_key').animate({
+            left: '720px',
+            top: '450px',
+            height: '200px'
+          }, 10);
+          $('main').append('<a href="r6_solved.html"><div class="keyfound"></div></a>');
+        });
+
+        $('#r6_keyhider').on('click', function(){
+          $('#r6_keyhider').css("display", "none");
+        });
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../_style/style.css">
+  </head>
+  <body>
+    <main>
+      <img src="scenes/r6_v2.png">
+      <img id="r6_key" class="keys" src="../_animations/key.png">
+      <div id="r6_keyhider" class="creatures"></div>
+      <a href="r6_main.html"><div class="back">back</div></a>
+    </main>
+  </body>
+
+</html>

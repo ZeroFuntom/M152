@@ -6,11 +6,91 @@
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
+        var alien = new Audio('audio/alien.mp3');
+        var key = false;
+        var clicked = false;
         new Audio('audio/strange.mp3').play();
+
+
         setTimeout(function(){
-          $("#r5a_alien").animate({opacity: 1, left: 960}, 1000);
-          $("#r5a_alien").animate({opacity: 0, left: 1920}, 1000);
+          if(!key){
+            $("#r5a_alien").animate({opacity: 1, left: 960}, 1000);
+            $("#r5a_alien").animate({opacity: 0, left: 1920}, 1000);
+          }
         }, 2000);
+
+
+
+        setTimeout(function(){
+          if(!key){
+          alien.play();
+            $("#r5a_alien").animate({opacity: 1, left: 960}, 2000);
+            $("#r5a_key").animate({opacity: 1, left: 960}, 2000);
+            $("#r5a_alien").animate({opacity: 0, left: 0}, 2000);
+            $("#r5a_key").animate({opacity: 0, left: 0}, 2000);
+          }
+        }, 5000);
+
+
+
+        setTimeout(function(){
+          if(!key){
+            $("#r5a_alien").animate({width: 160, top: 200}, 10);
+            $("#r5a_key").animate({width: 100, top: 500}, 10);
+
+
+            $("#r5a_alien").animate({opacity: 1, left: 960}, 2000);
+            $("#r5a_key").animate({opacity: 1, left: 960}, 2000);
+            $("#r5a_alien").animate({opacity: 0, left: 1920}, 2000);
+            $("#r5a_key").animate({opacity: 0, left: 1920}, 2000);
+          }
+        }, 12000);
+
+        setTimeout(function(){
+          if(!key){
+            $("#r5a_alien").animate({width: 250, top: 150}, 10);
+            $("#r5a_key").animate({width: 150, top: 630}, 10);
+
+
+            $("#r5a_alien").animate({opacity: 1, left: 960}, 2000);
+            $("#r5a_key").animate({opacity: 1, left: 960}, 2000);
+            $("#r5a_alien").animate({opacity: 0, left: 0}, 2000);
+            $("#r5a_key").animate({opacity: 0, left: 0}, 2000);
+          }
+        }, 19000);
+
+
+        $("#r5a_key").on("click", function(){
+          if(!clicked){
+            clicked = true;
+            alien.pause();
+            key = true;
+            $("#r5a_alien").animate({opacity: 1, left: 835, width: 250, top: 100}, 2000);
+            $("#r5a_key").animate({opacity: 1, left: 835, width: 180, top: 570}, 2000);
+            $("#r5a_alien").animate({opacity: 0}, 4000);
+            $("#r5a_key").animate({left: 720, top: 450, width: 400}, 1000);
+
+            setTimeout(function(){
+              $("#r5a_key").animate({opacity: 0}, 2000);
+            }, 6000);
+
+            setTimeout(function(){
+              $("#r5a_door").css("display", "block");
+              $("#r5a_door").animate({opacity: 1}, 2000);
+            }, 9000);
+          }
+          //alert("Catched!");
+
+        });
+
+        $("#r5a_door").on("click", function(){
+          $('main').append('<div id="r5a-fin" class="finish"><h1 style="font-family: Castellar;">Time Travel</h1></div>');
+          $("#r5a-fin").animate({opacity: 1}, 1500);
+          new Audio('audio/timewarp.mp3').play();
+          setTimeout(function(){
+            window.location.replace("r5_solved.html");
+          }, 6000);
+        });
 
       });
     </script>
@@ -19,6 +99,8 @@
   <body>
     <main id="blank">
       <img id="r5a_alien" class="creatures" src="animations/alien.png">
+      <img id="r5a_door" class="clickables" src="animations/door.png">
+      <img id="r5a_key" class="keys" src="../_animations/key.png">
     </main>
   </body>
 

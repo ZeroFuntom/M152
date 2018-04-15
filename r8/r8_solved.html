@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creepy Mansion</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#to-finish').on('click', function(){
+          new Audio('audio/door.mp3').play();
+          $('main').append('<div id="r8-fin" class="finish"><h1 style="font-family: Castellar;">The End</h1></div>');
+          $('#r8-fin').animate({
+            opacity: '1'
+          }, 1000);
+
+          setTimeout(function(){
+            //window.location.replace("../r7/r7_main.html");
+          }, 7000);
+        });
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../_style/style.css">
+  </head>
+  <body>
+    <main>
+      <img src="scenes/r6_main.png">
+      <div id="to-r7" class="clickables"></div>
+    </main>
+  </body>
+
+</html>
