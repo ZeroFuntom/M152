@@ -15,6 +15,7 @@ h1{
   color: red;
   font-size: 100pt;
   margin-top: 200px;
+  font-family: castellar;
 }
 
 .clickables{
@@ -562,10 +563,23 @@ h1{
   top: 580px;
 }
 
+#r7_key{
+  left: 950px;
+  top: 640px;
+  height: 20px;
+}
+
 #to-r7{
   width: 200px;
   height: 320px;
   left: 290px;
+  top: 290px;
+}
+
+#to-r8{
+  width: 120px;
+  height: 290px;
+  left: 1150px;
   top: 290px;
 }
 
@@ -595,4 +609,52 @@ h1{
   background-color: white;
   width: 1920px;
   height: 1080px;
+}
+
+#r1_key{
+  left: 950px;
+  top: 640px;
+  height: 20px;
+}
+
+#to-r7_v1{
+  width: 600px;
+  height: 500px;
+  left: 1300px;
+  top: 80px;
+}
+
+#to-r7_v2{
+  width: 250px;
+  height: 220px;
+  left: 880px;
+  top: 350px;
+}
+
+#to-r7_v3{
+  width: 450px;
+  height: 300px;
+  left: 400px;
+  top: 300px;
+}
+
+#to-r7_v4{
+  width: 200px;
+  height: 100px;
+  left: 50px;
+  top: 400px;
+}
+
+#to-r7_v5{
+  width: 130px;
+  height: 310px;
+  left: 0px;
+  top: 630px;
+}
+
+#to-r7_v6{
+  width: 450px;
+  height: 150px;
+  left: 700px;
+  top: 600px;
 }
