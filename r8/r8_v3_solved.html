@@ -6,7 +6,65 @@
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script>
       $(document).ready(function() {
-        $("#r8_poweroff").css("opacity", "1");
+        new Audio("audio/nosferatu.mp3").play();
+
+        setTimeout(function(){
+
+        }, 2500);
+
+        setTimeout(function(){
+          $("#r8_poweroff").css("opacity", "1");
+        }, 200);
+
+        setTimeout(function(){
+          $("#r8_poweroff").css("opacity", "0");
+        }, 400);
+
+        setTimeout(function(){
+          $("#r8_poweroff").css("opacity", "1");
+        }, 600);
+
+        setTimeout(function(){
+          $("#r8_poweroff").css("opacity", "0");
+        }, 730);
+
+        setTimeout(function(){
+          $("#r8_poweroff").css("opacity", "1");
+        }, 1030);
+
+        setTimeout(function(){
+          $("#r8_poweroff").css("opacity", "0");
+        }, 1090);
+
+        setTimeout(function(){
+          $("#r8_poweroff").css("opacity", "1");
+        }, 1630);
+
+        setTimeout(function(){
+          $("#r8_poweroff").css("opacity", "0");
+        }, 1900);
+
+        /*
+        setTimeout(function(){
+          $("#r8_poweroff").css("opacity", "1");
+        }, 250);
+
+        setTimeout(function(){
+          $("#r8_poweroff").css("opacity", "0");
+        }, 270);
+        */
+        //
+        //$("#nosferatu").css("opacity", "0");
+        //$("main").append('');
+        setTimeout(function(){
+          $("main").append('<video id="nosferatu" src="animations/Nosferatu.mp4" autoplay>');
+        }, 2500);
+
+        setTimeout(function(){
+          $("#nosferatu").remove();
+          $("#r8_poweroff").css("opacity", "1");
+        }, 10000);
+
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../_style/style.css">
@@ -15,7 +73,7 @@
     <main>
       <div id="r8_poweroff" class="black"></div>
       <img src="scenes/r8_v3.png">
-      <a href="r8_main.html"><div class="back">back</div></a>
+
     </main>
   </body>
 

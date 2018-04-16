@@ -368,6 +368,13 @@ h1{
   opacity: 1;
 }
 
+#nosferatu{
+  position: absolute;
+  left: 0;
+  top: 0;
+  /*display: none !important;*/
+}
+
 
 /*Room Navigations*/
 #to-r1_v1{
