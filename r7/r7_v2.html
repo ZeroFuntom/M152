@@ -6,6 +6,18 @@
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
+
+        setTimeout(function () {
+          $("#mermaid").animate({
+            opacity: "0.8"
+          }, 3000);
+        }, 0);
+        setTimeout(function () {
+          $("#mermaid").animate({
+            opacity: "0"
+          }, 3000);
+        }, 5000);
+
         $('#r7_key').on('click', function(){
           $('#r7_key').animate({
             left: '720px',
@@ -14,6 +26,7 @@
           }, 10);
           $('main').append('<a href="r7_solved.html"><div class="keyfound"></div></a>');
         });
+
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../_style/style.css">
@@ -21,6 +34,7 @@
   <body>
     <main>
         <img src="scenes/r7_v2.png">
+        <img src="animations/mermaid.png" class="creatures" id="mermaid">
         <img id="r7_key" class="keys" src="../_animations/key.png">
         <a href="r7_main.html"><div class="back">back</div></a>
     </main>

@@ -7,6 +7,10 @@
   <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
+      new Audio('audio/sink.mp3').play();
+      $('#r7_blood').animate({
+        opacity: 1
+      }, 5000);
     });
   </script>
   <link rel="stylesheet" type="text/css" href="../_style/style.css">
@@ -15,6 +19,7 @@
 <body>
   <main>
     <img src="scenes/r7_v4.png">
+    <img id="r7_blood" class="creatures" src="animations/blood.png">
     <a href="r7_main.html">
       <div class="back">Back</div>
     </a>

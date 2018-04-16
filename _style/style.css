@@ -16,6 +16,12 @@ h1{
   font-size: 100pt;
   margin-top: 200px;
   font-family: castellar;
+  animation: beat 3s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes beat{
+	to { transform: scale(1.4); }
 }
 
 .clickables{
@@ -39,9 +45,11 @@ h1{
   top: 950px;
   left: 50px;
   padding: 5px;
-  background-color: black;
-  color: white;
+  color: red;
   font-family: Castellar;
+  border: red;
+  font-weight: bold;
+  /* background-image: url("frame.jpg"); */
 }
 
 .escape{
@@ -147,6 +155,16 @@ h1{
   top: 250px;
   width: 200px;
   opacity: 0;
+}
+
+#mermaid {
+  left: 650px;
+  top: 500px;
+  width: 600px;
+  opacity: 0;
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
 }
 
 #maskman{
@@ -490,6 +508,16 @@ h1{
   left: 950px;
   top: 640px;
   height: 20px;
+}
+
+#r7_blood{
+  left: 900px;
+  top: 600px;
+  width: 250px;
+  opacity: 0;
+  -ms-transform: skewY(20deg);
+  -webkit-transform: skewY(20deg);
+  transform: skewY(20deg);
 }
 
 #to-r7{
