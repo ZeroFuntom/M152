@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Creepy Mansion</title>
-  <meta charset="utf-8">
-  <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
+  <head>
+    <title>Creepy Mansion</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
         $('#r7_key').on('click', function(){
           $('#r7_key').animate({
             left: '720px',
@@ -16,16 +15,14 @@
           $('main').append('<a href="r7_solved.html"><div class="keyfound"></div></a>');
         });
       });
-  </script>
-  <link rel="stylesheet" type="text/css" href="../_style/style.css">
-</head>
-
-<body>
-  <main>
-    <img src="scenes/r7_v2.png">
-    <img id="r7_key" class="keys" src="../_animations/key.png">
-    <a href="r7_main.html"><div class="back">Back</div></a>
-  </main>
-</body>
-
+    </script>
+    <link rel="stylesheet" type="text/css" href="../_style/style.css">
+  </head>
+  <body>
+    <main>
+        <img src="scenes/r7_v2.png">
+        <img id="r7_key" class="keys" src="../_animations/key.png">
+        <a href="r7_main.html"><div class="back">back</div></a>
+    </main>
+  </body>
 </html>

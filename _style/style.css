@@ -15,6 +15,7 @@ h1{
   color: red;
   font-size: 100pt;
   margin-top: 200px;
+  font-family: castellar;
 }
 
 .clickables{
@@ -485,10 +486,23 @@ h1{
   top: 580px;
 }
 
+#r7_key{
+  left: 950px;
+  top: 640px;
+  height: 20px;
+}
+
 #to-r7{
   width: 200px;
   height: 320px;
   left: 290px;
+  top: 290px;
+}
+
+#to-r8{
+  width: 120px;
+  height: 290px;
+  left: 1150px;
   top: 290px;
 }
 
