@@ -8,7 +8,11 @@
       $(document).ready(function(){
         $('#to-r8').on('click', function(){
           new Audio('audio/door.mp3').play();
+<<<<<<< HEAD
           $('main').append('<div id="r7-fin" class="finish"><h1 style="font-family: Castellar;">Next Room</h1><a href="../r8/r8_main.html"><div id="startgame" class="menuitem">Yes</div></a><a href="../main_menu.html"><div id="levels" class="menuitem">No</div></a></div>');
+=======
+          $('main').append('<div id="r7-fin" class="finish"><h1>Enter the next room?</h1></div>');
+>>>>>>> 88cb66d08ecf613ab07bd32bab0e6821e3a77cff
           $('#r7-fin').animate({
             opacity: '1'
           }, 1000);
