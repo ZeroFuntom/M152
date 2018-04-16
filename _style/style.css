@@ -49,7 +49,7 @@ h1{
   font-family: Castellar;
   border: red;
   font-weight: bold;
-  /* background-image: url("frame.jpg"); */
+  background-image: url("frame.png");
 }
 
 .escape{
@@ -108,7 +108,7 @@ h1{
   text-align: center;
   padding-top: 15px;
   cursor: pointer;
-  background-image: url("frame.jpg")
+  background-image: url("frame.png")
 }
 
 .levelitem{
