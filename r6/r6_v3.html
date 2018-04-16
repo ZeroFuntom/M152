@@ -6,13 +6,38 @@
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        new Audio("audio/girlcry.mp3").play();
+        var girlcry = new Audio("audio/girlcry.mp3");
+        $("#r6_v3_poweroff").css("display", "none");
+        girlcry.play();
+
+        $("#r6_girl").on("click", function(){
+          $("#r6_v3_poweroff").css("display", "block");
+          setTimeout(function(){
+            girlcry.pause();
+            $("#r6_v3_poweroff").animate({opacity: 1}, 40);
+            new Audio("audio/poltergeist.mp3").play();
+          },2000);
+
+          setTimeout(function(){
+            $("#r6_girl").css("display", "none");
+          },3000);
+
+          setTimeout(function(){
+            $("#r6_v3_poweroff").animate({opacity: 0}, 40);
+          },16000);
+
+          setTimeout(function(){
+            $("#r6_v3_poweroff").css("display", "none");
+          },17000);
+
+        });
       });
     </script>
     <link rel="stylesheet" type="text/css" href="../_style/style.css">
   </head>
   <body>
     <main>
+      <div id="r6_v3_poweroff" class="black"></div>
       <img src="scenes/r6_v3.png">
       <img id="r6_girl" class="creatures" src="animations/girl.png">
       <a href="r6_main.html"><div class="back">back</div></a>

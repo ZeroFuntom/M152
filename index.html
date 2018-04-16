@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creepy Mansion</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="_script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $("#warning").animate({opacity: 1}, 2000);
+
+          setTimeout(function(){
+            $("#warning").animate({opacity: 0}, 2000);
+          }, 16000);
+
+          setTimeout(function(){
+            window.location.replace("main_menu.html");
+          }, 20000);
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="_style/style.css">
+  </head>
+  <body>
+    <main>
+
+      <div id="warning">
+        <h1>WARNUNG</h1>
+        <p>
+          Das folgende Spiel enthält Blitzeffekte, Schreckszenen der Stufe 5 und unangenehme Gruselszenen. Personen mit Herz-Kreislauf-Problemen, Asthma, Epilepsie, psychologischen Belastungen oder Klaustrophobie wird empfohlen, das Spiel sofort zu beenden.
+        </p>
+        <p>Spielen auf eigene Gefahr!</p>
+      </div>
+    </main>
+  </body>
+
+</html>

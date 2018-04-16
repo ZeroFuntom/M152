@@ -8,14 +8,10 @@
       $(document).ready(function(){
         $('#to-r5').on('click', function(){
           new Audio('audio/door.mp3').play();
-          $('main').append('<div id="r4-fin" class="finish"><h1 style="font-family: Castellar;">Next Room</h1></div>');
+          $('main').append('<div id="r4-fin" class="finish"><h1 style="font-family: Castellar;">Next Room</h1><a href="../r5/r5_main.html"><div id="startgame" class="menuitem">Yes</div></a><a href="../main_menu.html"><div id="levels" class="menuitem">No</div></a></div>');
           $('#r4-fin').animate({
             opacity: '1'
           }, 1000);
-
-          setTimeout(function(){
-            window.location.replace("../r5/r5_main.html");
-          }, 7000);
         });
       });
     </script>

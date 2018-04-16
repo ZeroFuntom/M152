@@ -96,6 +96,83 @@ h1{
   opacity: 0;
 }
 
+.menuitem{
+  position: absolute;
+  top: 600px;
+  border: solid;
+  border-color: red;
+  color: red;
+  width: 500px;
+  height: 100px;
+  font-size: 50pt;
+  text-align: center;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.levelitem{
+  position: absolute;
+  border: solid;
+  border-color: red;
+  color: red;
+  width: 150px;
+  height: 150px;
+  font-size: 90pt;
+  text-align: center;
+  top: 400px;
+  cursor: pointer;
+}
+
+#warning{
+  text-align: center;
+  color: red;
+  opacity: 0
+}
+
+#warning p{
+  font-size: 30pt;
+}
+
+#lvl1{
+  left: 100px;
+}
+
+#lvl2{
+  left: 320px;
+}
+
+#lvl3{
+  left: 540px;
+}
+
+#lvl4{
+  left: 760px;
+}
+
+#lvl5{
+  left: 980px;
+}
+
+#lvl6{
+  left: 1200px;
+}
+
+#lvl7{
+  left: 1420px;
+}
+
+#lvl8{
+  left: 1640px;
+}
+
+#startgame{
+  left: 430px;
+}
+
+#levels{
+  left: 990px;
+}
+
 #blank{
   background-color: white;
   width: 1920px;
