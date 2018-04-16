@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creepy Mansion</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="_script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#startgame").on("click", function(){
+          $("#startgame").animate({opacity: 0}, 1000);
+          $("#levels").animate({opacity: 0}, 1000);
+
+          setTimeout(function(){
+            $("#startgame").css("display", "none");
+            $("#levels").css("display", "none");
+          }, 1000);
+
+          setTimeout(function(){
+            window.location.replace("r1/r1_main.html");
+          }, 2000);
+        });
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="_style/style.css">
+  </head>
+  <body>
+    <main>
+      <img src="_scenes/mansion.png">
+      <div id="startgame" class="menuitem">Spiel starten</div>
+      <a href="levels.html"><div id="levels" class="menuitem">Levelauswahl</div></a>
+    </main>
+  </body>
+
+</html>
