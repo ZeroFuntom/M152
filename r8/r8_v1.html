@@ -5,12 +5,29 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="backgroundmusic.js"></script>
+    <script>
+      $(document).ready(function() {
+        setTimeout(function(){
+          $("#r8_poweroff").css("opacity", "1");
+          new Audio('audio/loudscream.mp3').play();
+          $('main').append('<img src="animations/redface.png" id="r8_redface" class="creatures" style="top:0; left:610px; z-index:1;">');
+        }, 1000);
+
+        setTimeout(function(){
+          $('#r8_redface').css("display", "none");
+          $("#r8_poweroff").css("display", "none");
+        },3000);
+      });
+    </script>
     <link rel="stylesheet" type="text/css" href="../_style/style.css">
   </head>
   <body>
     <main>
+      <div id="r8_poweroff" class="black"></div>
+
       <img src="scenes/r8_v1.png">
       <a href="r8_main.html"><div class="back">back</div></a>
+
     </main>
   </body>
 

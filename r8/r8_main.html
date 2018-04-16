@@ -5,12 +5,48 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="backgroundmusic.js"></script>
+    <script>
+      $(document).ready(function() {
+        setTimeout(function () {
+          $("#r8_silhouette").animate({
+            opacity: "0.6"
+          }, 1000);
+        }, 0);
+        setTimeout(function () {
+          $("#r8_silhouette").animate({
+            opacity: "0"
+          }, 1000);
+        }, 2000);
+
+        setTimeout(function () {
+          $("#r8_poweroff").css("display", "none");
+        }, 3000);
+
+        setTimeout(function () {
+          $("#r8_poweroff").css("display", "block");
+          $("#r8_maskman").animate({top: 100}, 50);
+          $("#r8_maskman").animate({height: 900, top: 100, left: 700}, 100);
+          new Audio('audio/bang.mp3').play();
+          new Audio('audio/scream.mp3').play();
+        }, 5000);
+
+        setTimeout(function () {
+          $("#r8_maskman").animate({opacity: 0}, 500);
+        }, 9000);
+
+        setTimeout(function () {
+          $("#r8_poweroff").css("display", "none");
+        }, 10000);
+      });
+    </script>
     <link rel="stylesheet" type="text/css" href="../_style/style.css">
   </head>
   <body>
     <main>
+      <div id="r8_poweroff" class="black"></div>
       <img src="scenes/r8_main.png">
-
+      <img src="animations/silhouette.png" class="creatures" id="r8_silhouette">
+      <img id="r8_maskman" class="creatures" src="animations/maskman.png">
       <a href="r8_v1.html"><div id="to-r8_v1" class="clickables"></div></a>
       <a href="r8_v2.html"><div id="to-r8_v2" class="clickables"></div></a>
       <a href="r8_v3.html"><div id="to-r8_v3" class="clickables"></div></a>

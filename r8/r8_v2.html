@@ -5,11 +5,37 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="../_script/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="backgroundmusic.js"></script>
+    <script>
+      $(document).ready(function() {
+        setTimeout(function(){
+          $("#r8_poweroff").css("opacity", "1");
+          new Audio('audio/bang.mp3').play();
+          new Audio('audio/scream.mp3').play();
+          $('main').append('<img src="animations/bride.png" id="r8_bride" class="creatures" style="top:0; left:0; z-index:1;">');
+        }, 1000);
+
+        setTimeout(function(){
+          $('#r8_bride').css("display", "none");
+          $('#r8_key').css("display", "block");
+        },4000);
+
+        $('#r8_key').on('click', function(){
+          $('#r8_key').css("transform", "rotate(0deg)");
+          $('#r8_key').animate({
+            left: '720px',
+            top: '450px',
+            height: '200px'
+          }, 10);
+          $('main').append('<a href="r8_solved.html"><div class="keyfound"></div></a>');
+        });
+      });
+    </script>
     <link rel="stylesheet" type="text/css" href="../_style/style.css">
   </head>
   <body>
     <main>
       <img src="scenes/r8_v2.png">
+      <img id="r8_key" class="keys" src="../_animations/key.png">
       <a href="r8_main.html"><div class="back">back</div></a>
     </main>
   </body>

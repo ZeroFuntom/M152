@@ -21,7 +21,7 @@ h1{
 }
 
 @keyframes beat{
-	to { transform: scale(1.4); }
+	to { transform: scale(1.4); }ss
 }
 
 .clickables{
@@ -218,6 +218,14 @@ h1{
   transform: rotate(-20deg);
 }
 
+#r8_key{
+  left: 880px;
+  top: 920px;
+  height: 20px;
+  transform: rotate(40deg);
+  display: none;
+}
+
 
 #r5a_door{
   display: none;
@@ -340,6 +348,20 @@ h1{
   opacity: 1;
   transform: rotate(-20deg);
   cursor: pointer;
+}
+
+#r8_silhouette{
+  left: 750px;
+  top: 100px;
+  width: 200px;
+  opacity: 0;
+}
+
+#r8_maskman{
+  left: 830px;
+  top: -200px;
+  height: 200px;
+  opacity: 1;
 }
 
 
@@ -626,6 +648,13 @@ h1{
 }
 
 #to-r8_v3{
+  width: 140px;
+  height: 300px;
+  left: 800px;
+  top: 0px;
+}
+
+#to-finish{
   width: 140px;
   height: 300px;
   left: 800px;
