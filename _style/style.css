@@ -108,6 +108,7 @@ h1{
   text-align: center;
   padding-top: 15px;
   cursor: pointer;
+  background-image: url("frame.jpg")
 }
 
 .levelitem{
