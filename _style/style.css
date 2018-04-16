@@ -13,7 +13,7 @@ main{
 
 h1{
   color: red;
-  font-size: 100pt;
+  font-size: 70pt;
   margin-top: 200px;
   font-family: castellar;
   animation: beat 3s infinite alternate;
@@ -121,6 +121,7 @@ h1{
   text-align: center;
   top: 400px;
   cursor: pointer;
+  font-family: castellar;
 }
 
 #warning{
@@ -167,10 +168,12 @@ h1{
 
 #startgame{
   left: 430px;
+  font-family: castellar;
 }
 
 #levels{
   left: 990px;
+  font-family: castellar;
 }
 
 #blank{
@@ -308,7 +311,7 @@ h1{
 #r4_blood{
   left: 950px;
   top: 550px;
-  width: 250px;
+  width: 200px;
   opacity: 0;
 }
 

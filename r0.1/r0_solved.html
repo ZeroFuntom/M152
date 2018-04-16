@@ -8,7 +8,7 @@
       $(document).ready(function(){
         $('#to-r1').on('click', function(){
           new Audio('audio/door.mp3').play();
-          $('main').append('<div id="r1-fin" class="finish"><h1>Next Room</h1></div>');
+          $('main').append('<div id="r1-fin" class="finish"><h1>do you want to enter the next room?</h1></div>');
           $('#r1-fin').animate({
             opacity: '1'
           }, 1000);
