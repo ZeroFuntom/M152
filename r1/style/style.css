@@ -14,6 +14,17 @@ h1{
   margin-top: 200px;
 }
 
+.lvlinfo{
+  position: absolute;
+  background-color: black;
+  width: 300px;
+  height: 50px;
+  font-size: 10pt;
+  color: red;
+  top: 0;
+  left: 0;
+}
+
 .clickables{
   position: absolute;
   cursor: pointer;
@@ -110,7 +121,7 @@ h1{
   width: 130px;
   height: 300px;
 }
-  
+
 #to-r1_v3{
   left: 1500px;
   top: 600px;
