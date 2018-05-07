@@ -24,6 +24,13 @@ h1{
 	to { transform: scale(1.4); }ss
 }
 
+.toplogo{
+  position: absolute;
+  top: 30px;
+  left: 85px;
+  width: 250px;
+}
+
 .lvlinfo{
   position: absolute;
   background-color: black;
