@@ -21,7 +21,7 @@ h1{
 }
 
 @keyframes beat{
-	to { transform: scale(1.4); }ss
+	to { transform: scale(1.4); }
 }
 
 .toplogo{
@@ -46,7 +46,7 @@ h1{
 .clickables{
   position: absolute;
   cursor: pointer;
-  border: solid
+  /*border: solid*/
 }
 
 .creatures{
@@ -66,7 +66,7 @@ h1{
   padding: 5px;
   color: red;
   font-family: Castellar;
-  border: red;
+  /*border: red;*/
   font-weight: bold;
   background-image: url("frame.png");
 }
