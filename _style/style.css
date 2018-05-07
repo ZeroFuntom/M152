@@ -118,7 +118,6 @@ h1{
 .menuitem{
   position: absolute;
   top: 600px;
-  border: solid;
   border-color: red;
   color: red;
   width: 500px;
@@ -127,7 +126,9 @@ h1{
   text-align: center;
   padding-top: 15px;
   cursor: pointer;
-  background-image: url("frame.png")
+  background-image: url("frame.png");
+  background-size: 600px 200px;
+  background-position: center;
 }
 
 .levelitem{
